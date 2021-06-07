@@ -3,6 +3,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import javax.swing.JFileChooser;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.sql.Connection;
+import java.sql.Statement;
 
 public class createNewProject extends Component implements ActionListener {
 
@@ -90,6 +93,37 @@ public class createNewProject extends Component implements ActionListener {
         if(text.equals("Continue")){
             new Charts();
             jf.setVisible(false);
+
+            String path = jtfLocation.getText();
+            path = path + jtfName.getText();
+            File f2 = new File(path);
+            Boolean bool = f2.mkdir();
+            if(bool){
+                System.out.println("Folder created");
+            }
+            else{
+                System.out.println("Folder Not Created");
+            }
+
+            DatabaseConnection connectNow = new DatabaseConnection();
+            Connection connectDB = connectNow.getConnection();
+
+            try{
+
+                String email = SignIn.jtf.getText();
+                String name  = jtfName.getText();
+                String location = jtfLocation.getText();
+
+                Statement statement = connectDB.createStatement();
+                String query = "Insert into recentworks values ('"+ email+ "','"+name+"','"+location+"')";
+                statement.executeUpdate(query);
+
+
+
+            }catch (Exception ex){
+                ex.printStackTrace();
+                ex.getCause();
+            }
         }
     }
 }

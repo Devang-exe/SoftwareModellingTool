@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class SignIn implements ActionListener {
     JFrame jf;
-    JTextField jtf;
+    public static JTextField jtf;
     JPasswordField jpf1;
     JLabel jlb1,jlb2,jlb3;
     JButton jb;
@@ -69,7 +69,7 @@ public class SignIn implements ActionListener {
         if(jtf.getText().isBlank()==false && jpf1.getText().isBlank()==false){
             validateLogin();
         }else{
-            JOptionPane.showMessageDialog(jf,"Please enter username and password");
+            JOptionPane.showMessageDialog(jf,"Please enter email and password");
         }
 
 

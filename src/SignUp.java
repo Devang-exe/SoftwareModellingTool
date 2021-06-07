@@ -81,28 +81,34 @@ public class SignUp implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        DatabaseConnection connectNow = new DatabaseConnection();
-        Connection connectDB = connectNow.getConnection();
 
-        try{
+        if(jtf1.getText().isBlank()==false && jtf2.getText().isBlank()==false && jtf3.getText().isBlank()==false && jpf.getText().isBlank()==false){
+            DatabaseConnection connectNow = new DatabaseConnection();
+            Connection connectDB = connectNow.getConnection();
 
-            String name = jtf1.getText();
-            String emailId = jtf2.getText();
-            String phoneNo = jtf3.getText();
-            String profession = jcb.getSelectedItem().toString();
-            String password = jpf.getText();
+            try{
 
-            Statement statement = connectDB.createStatement();
-            String query = "Insert into user values ('"+ name+ "','"+emailId+"','"+phoneNo+"','"+profession+"','"+password+"')";
-            statement.executeUpdate(query);
+                String name = jtf1.getText();
+                String emailId = jtf2.getText();
+                String phoneNo = jtf3.getText();
+                String profession = jcb.getSelectedItem().toString();
+                String password = jpf.getText();
 
-            JOptionPane.showMessageDialog(jf,"Information Saved");
-            jf.setVisible(false);
-            new SignIn();
+                Statement statement = connectDB.createStatement();
+                String query = "Insert into user values ('"+ name+ "','"+emailId+"','"+phoneNo+"','"+profession+"','"+password+"')";
+                statement.executeUpdate(query);
 
-        }catch (Exception ex){
-            ex.printStackTrace();
-            ex.getCause();
+                JOptionPane.showMessageDialog(jf,"Information Saved");
+                jf.setVisible(false);
+                new SignIn();
+
+            }catch (Exception ex){
+                ex.printStackTrace();
+                ex.getCause();
+            }
+        }else {
+            JOptionPane.showMessageDialog(jf, "Please enter the information");
         }
+
     }
 }

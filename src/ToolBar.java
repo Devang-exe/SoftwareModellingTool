@@ -44,7 +44,7 @@ public class ToolBar implements ActionListener {
 	private JButton newFile;
 	private JFileChooser fc;
 	private JComboBox comboBox;
-	private File f;
+	public static File f;
 	private DrawFrame frame;
 
 	TextDialog td;
@@ -94,7 +94,7 @@ public class ToolBar implements ActionListener {
 		redo = new JButton("Redo", new ImageIcon(this.getClass().getResource("/icons/Redo-24.png")));
 		clear = new JButton("Clear",new ImageIcon(this.getClass().getResource("/icons/Trash-24.png")));
 		
-		String[] items = { "Line Width","1", "2", "3", "4", "5", "6", "7", "8" };
+		String[] items = { "Size","1", "2", "3", "4", "5", "6", "7", "8" };
 		
 		comboBox = new JComboBox(items);
 		comboBox.setMaximumSize(new Dimension(100,25));
@@ -174,7 +174,8 @@ public class ToolBar implements ActionListener {
 		} else if (source == newFile) {
 			
 			newFile();
-		}else {
+		}
+		else {
 			JButton b = (JButton) source;
 			frame.getInkPanel().setColor(b.getBackground());
 		}
@@ -293,8 +294,6 @@ public class ToolBar implements ActionListener {
 	//	Image image = Toolkit.getDefaultToolkit().getImage(f.getPath());
 		try {
 			frame.getInkPanel().setImage(ImageIO.read(f));
-			newDimensions = new Dimension(ImageIO.read(f).getWidth(), ImageIO.read(f).getHeight());
-			setDimensions(newDimensions.width, newDimensions.height);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -302,6 +301,8 @@ public class ToolBar implements ActionListener {
 
 
 	}
+
+
 	private void saveFile(File f) throws IOException {
 
 		// ----------------
