@@ -5,6 +5,7 @@
 ![Badge](https://img.shields.io/badge/Java-GUI-green)
 ![badge](https://img.shields.io/badge/Jdk-16.0.1-blue)
 ![badge](https://img.shields.io/badge/IntelliJ-2021.1.2-orange)
+![badge](https://img.shields.io/badge/SQL-Database-yellow)
 
 # Abstract💡
 
@@ -62,12 +63,16 @@ $ git clone https://github.com/Devang-exe/SoftwareModellingTool.git
 
 # Project Snapshots📷
 <img width="586" alt="Screenshot 2021-06-06 at 10 15 52 PM" src="https://user-images.githubusercontent.com/52460466/120965300-52936780-c782-11eb-87d3-6b25bcc7cf39.png">
-<img width="514" alt="Screenshot 2021-06-06 at 10 16 02 PM" src="https://user-images.githubusercontent.com/52460466/120965403-78b90780-c782-11eb-8372-ed637952c7da.png">
-<img width="572" alt="Screenshot 2021-06-06 at 10 16 22 PM" src="https://user-images.githubusercontent.com/52460466/120965465-8ff7f500-c782-11eb-9586-ad3b623a1c3e.png">
-<img width="576" alt="Screenshot 2021-06-06 at 10 16 57 PM" src="https://user-images.githubusercontent.com/52460466/120965533-a4d48880-c782-11eb-84da-422903d2e8fa.png">
-<img width="549" alt="Screenshot 2021-06-06 at 10 17 06 PM" src="https://user-images.githubusercontent.com/52460466/120965545-a7cf7900-c782-11eb-9352-8e00ddc72773.png">
-<img width="553" alt="Screenshot 2021-06-06 at 10 17 13 PM" src="https://user-images.githubusercontent.com/52460466/120965551-ab630000-c782-11eb-81d8-4a5c800a284f.png">
-<img width="577" alt="Screenshot 2021-06-06 at 10 17 28 PM" src="https://user-images.githubusercontent.com/52460466/120965584-b6b62b80-c782-11eb-8e9a-cdc8881241df.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 16 02 PM" src="https://user-images.githubusercontent.com/52460466/120965403-78b90780-c782-11eb-8372-ed637952c7da.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 16 22 PM" src="https://user-images.githubusercontent.com/52460466/120965465-8ff7f500-c782-11eb-9586-ad3b623a1c3e.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 16 57 PM" src="https://user-images.githubusercontent.com/52460466/120965533-a4d48880-c782-11eb-84da-422903d2e8fa.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 17 06 PM" src="https://user-images.githubusercontent.com/52460466/120965545-a7cf7900-c782-11eb-9352-8e00ddc72773.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 17 13 PM" src="https://user-images.githubusercontent.com/52460466/120965551-ab630000-c782-11eb-81d8-4a5c800a284f.png">
+<img width="586" alt="Screenshot 2021-06-07 at 11 47 20 AM" src="https://user-images.githubusercontent.com/52460466/120968261-40b3c380-c786-11eb-965f-35fa28a37319.png">
+<img width="586" alt="Screenshot 2021-06-07 at 11 47 32 AM" src="https://user-images.githubusercontent.com/52460466/120968300-51643980-c786-11eb-8d2d-bcfd53e87fa0.png">
+<img width="586" alt="Screenshot 2021-06-07 at 11 47 43 AM" src="https://user-images.githubusercontent.com/52460466/120968331-5d4ffb80-c786-11eb-91d2-3792cdda24e5.png">
+<img width="586" alt="Screenshot 2021-06-07 at 11 47 54 AM" src="https://user-images.githubusercontent.com/52460466/120968350-63de7300-c786-11eb-8b32-89c78ebf8256.png">
+<img width="586" alt="Screenshot 2021-06-06 at 10 17 28 PM" src="https://user-images.githubusercontent.com/52460466/120965584-b6b62b80-c782-11eb-8e9a-cdc8881241df.png">
 
 # Result and Discusion💥
 
